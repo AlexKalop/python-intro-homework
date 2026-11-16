@@ -6,8 +6,7 @@ from datetime import datetime
 if os.path.exists("../data/expenses.csv"):
     with open('../data/expenses.csv', 'r') as file:
         records = list(csv.DictReader(file))
-    for item in records:    
-        item['amount'] = float(item['amount'])
+    for item in records: item['amount'] = float(item['amount'])
     
         
     food_expenses = [row for row in records if row['category'] == 'Food'] 
