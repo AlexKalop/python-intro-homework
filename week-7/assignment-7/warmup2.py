@@ -1,9 +1,9 @@
 import csv
 
 with open('../data/students.csv','r') as file:
-    reader = csv.reader(file)
+    reader = csv.DictReader(file)
 
     next(reader)
     for row in reader:
-        print(f"{row[0]}: {row[2]}")
+        print(f"{row['name']}: {row['score']}")
 
