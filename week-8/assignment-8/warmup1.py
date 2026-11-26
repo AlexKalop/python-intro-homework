@@ -3,7 +3,7 @@ while True:
 
     input_from_user = input("Enter a number: ")
     try:
-        number = int(input_from_user)
+        number = float(input_from_user)
         print (f"You entered: {number:.1f}")
         break
 

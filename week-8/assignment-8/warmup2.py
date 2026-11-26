@@ -1,6 +1,6 @@
 
 
-numerator_from_user = float(input("Enter the denominator: "))
+numerator_from_user = float(input("Enter the numerator: "))
 denominator_from_user = float(input("Enter the denominator: "))
 try:
     answer = numerator_from_user/denominator_from_user
